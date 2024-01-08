@@ -1,0 +1,127 @@
+[2024-01-05T17:13:44.653949 704841] === CCACHE 4.8.3 STARTED =========================================
+[2024-01-05T17:13:44.654036 704841] Configuration file: /home/ray47/.cache/Nuitka/ccache/ccache.conf
+[2024-01-05T17:13:44.654039 704841] System configuration file: /etc/ccache.conf
+[2024-01-05T17:13:44.654039 704841] Config: (default) absolute_paths_in_stderr = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) base_dir = 
+[2024-01-05T17:13:44.654039 704841] Config: (environment) cache_dir = /home/ray47/.cache/Nuitka/ccache
+[2024-01-05T17:13:44.654039 704841] Config: (default) compiler = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) compiler_check = mtime
+[2024-01-05T17:13:44.654039 704841] Config: (default) compiler_type = auto
+[2024-01-05T17:13:44.654039 704841] Config: (default) compression = true
+[2024-01-05T17:13:44.654039 704841] Config: (default) compression_level = 0
+[2024-01-05T17:13:44.654039 704841] Config: (default) cpp_extension = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) debug = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) debug_dir = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) depend_mode = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) direct_mode = true
+[2024-01-05T17:13:44.654039 704841] Config: (default) disable = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) extra_files_to_hash = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) file_clone = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) hard_link = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) hash_dir = true
+[2024-01-05T17:13:44.654039 704841] Config: (default) ignore_headers_in_manifest = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) ignore_options = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) inode_cache = true
+[2024-01-05T17:13:44.654039 704841] Config: (default) keep_comments_cpp = false
+[2024-01-05T17:13:44.654039 704841] Config: (environment) log_file = /home/ray47/Projects/python/pysimplegui/assistant.onefile-build/ccache-704817.txt
+[2024-01-05T17:13:44.654039 704841] Config: (default) max_files = 0
+[2024-01-05T17:13:44.654039 704841] Config: (default) max_size = 5.0 GiB
+[2024-01-05T17:13:44.654039 704841] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-05T17:13:44.654039 704841] Config: (default) namespace = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) path = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) pch_external_checksum = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) prefix_command = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) prefix_command_cpp = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) read_only = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) read_only_direct = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) recache = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) remote_only = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) remote_storage = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) reshare = false
+[2024-01-05T17:13:44.654039 704841] Config: (default) run_second_cpp = true
+[2024-01-05T17:13:44.654039 704841] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-05T17:13:44.654039 704841] Config: (default) stats = true
+[2024-01-05T17:13:44.654039 704841] Config: (default) stats_log = 
+[2024-01-05T17:13:44.654039 704841] Config: (default) temporary_dir = /run/user/1000/ccache-tmp
+[2024-01-05T17:13:44.654039 704841] Config: (default) umask = 
+[2024-01-05T17:13:44.654070 704841] Command line: /usr/bin/ccache /usr/bin/gcc -o static_src/OnefileBootstrap.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zlib -I. -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/include -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zstd static_src/OnefileBootstrap.c
+[2024-01-05T17:13:44.654079 704841] Hostname: poppy
+[2024-01-05T17:13:44.654082 704841] Working directory: /home/ray47/Projects/python/pysimplegui/assistant.onefile-build
+[2024-01-05T17:13:44.654089 704841] Compiler: /usr/bin/gcc
+[2024-01-05T17:13:44.654092 704841] Compiler type: gcc
+[2024-01-05T17:13:44.654140 704841] Source file: static_src/OnefileBootstrap.c
+[2024-01-05T17:13:44.654144 704841] Object file: static_src/OnefileBootstrap.o
+[2024-01-05T17:13:44.654164 704841] Trying direct lookup
+[2024-01-05T17:13:44.654250 704841] Manifest key: 3bcc50rh9cq0b56ip7vope1opackvs21a
+[2024-01-05T17:13:44.654266 704841] No 3bcc50rh9cq0b56ip7vope1opackvs21a in local storage
+[2024-01-05T17:13:44.654295 704841] Running preprocessor
+[2024-01-05T17:13:44.654312 704841] Executing /usr/bin/gcc -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zlib -I. -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/include -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zstd -E -o /run/user/1000/ccache-tmp/cpp_stdout.tmp.uyehd4.i static_src/OnefileBootstrap.c
+[2024-01-05T17:13:44.705775 704841] Too new ctime or mtime of onefile_definitions.h, not considering for inode cache
+[2024-01-05T17:13:44.705803 704841] Too new ctime or mtime of onefile_definitions.h, not considering for inode cache
+[2024-01-05T17:13:44.709754 704841] Got result key from preprocessor
+[2024-01-05T17:13:44.709763 704841] Result key: c350j3453uk5p1qk5atfeu2qli2qe1ogu
+[2024-01-05T17:13:44.709782 704841] No c350j3453uk5p1qk5atfeu2qli2qe1ogu in local storage
+[2024-01-05T17:13:44.709786 704841] Running real compiler
+[2024-01-05T17:13:44.709816 704841] Executing /usr/bin/gcc -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zlib -I. -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/include -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zstd -c -fdiagnostics-color -o static_src/OnefileBootstrap.o static_src/OnefileBootstrap.c
+[2024-01-05T17:13:47.603998 704841] Using default compression level 1
+[2024-01-05T17:13:47.604144 704841] Storing embedded entry #0 .o (200344 bytes) from static_src/OnefileBootstrap.o
+[2024-01-05T17:13:47.605169 704841] Acquiring /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.lock
+[2024-01-05T17:13:47.605207 704841] Acquired /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.lock
+[2024-01-05T17:13:47.605210 704841] Creating /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.alive
+[2024-01-05T17:13:47.605242 704841] Stored c350j3453uk5p1qk5atfeu2qli2qe1ogu in local storage (/home/ray47/.cache/Nuitka/ccache/c/3/50j3453uk5p1qk5atfeu2qli2qe1oguR)
+[2024-01-05T17:13:47.605248 704841] Acquiring /home/ray47/.cache/Nuitka/ccache/c/stats.lock
+[2024-01-05T17:13:47.605275 704841] Acquired /home/ray47/.cache/Nuitka/ccache/c/stats.lock
+[2024-01-05T17:13:47.605277 704841] Creating /home/ray47/.cache/Nuitka/ccache/c/stats.alive
+[2024-01-05T17:13:47.605395 704841] Releasing /home/ray47/.cache/Nuitka/ccache/c/stats.lock
+[2024-01-05T17:13:47.605416 704841] Unlink /home/ray47/.cache/Nuitka/ccache/c/stats.alive
+[2024-01-05T17:13:47.605429 704841] Unlink /home/ray47/.cache/Nuitka/ccache/c/stats.lock
+[2024-01-05T17:13:47.605431 704841] Released /home/ray47/.cache/Nuitka/ccache/c/stats.lock
+[2024-01-05T17:13:47.605434 704841] Releasing /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.lock
+[2024-01-05T17:13:47.605446 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.alive
+[2024-01-05T17:13:47.605458 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.lock
+[2024-01-05T17:13:47.605461 704841] Released /home/ray47/.cache/Nuitka/ccache/lock/subdir_c3.lock
+[2024-01-05T17:13:47.605929 704841] Added result key to manifest 3bcc50rh9cq0b56ip7vope1opackvs21a
+[2024-01-05T17:13:47.605933 704841] Using default compression level 1
+[2024-01-05T17:13:47.606118 704841] Acquiring /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.lock
+[2024-01-05T17:13:47.606139 704841] Acquired /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.lock
+[2024-01-05T17:13:47.606142 704841] Creating /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.alive
+[2024-01-05T17:13:47.606171 704841] Stored 3bcc50rh9cq0b56ip7vope1opackvs21a in local storage (/home/ray47/.cache/Nuitka/ccache/3/b/cc50rh9cq0b56ip7vope1opackvs21aM)
+[2024-01-05T17:13:47.606176 704841] Acquiring /home/ray47/.cache/Nuitka/ccache/3/stats.lock
+[2024-01-05T17:13:47.606192 704841] Acquired /home/ray47/.cache/Nuitka/ccache/3/stats.lock
+[2024-01-05T17:13:47.606194 704841] Creating /home/ray47/.cache/Nuitka/ccache/3/stats.alive
+[2024-01-05T17:13:47.606292 704841] Releasing /home/ray47/.cache/Nuitka/ccache/3/stats.lock
+[2024-01-05T17:13:47.606308 704841] Unlink /home/ray47/.cache/Nuitka/ccache/3/stats.alive
+[2024-01-05T17:13:47.606321 704841] Unlink /home/ray47/.cache/Nuitka/ccache/3/stats.lock
+[2024-01-05T17:13:47.606323 704841] Released /home/ray47/.cache/Nuitka/ccache/3/stats.lock
+[2024-01-05T17:13:47.606326 704841] Releasing /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.lock
+[2024-01-05T17:13:47.606338 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.alive
+[2024-01-05T17:13:47.606350 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.lock
+[2024-01-05T17:13:47.606353 704841] Released /home/ray47/.cache/Nuitka/ccache/lock/subdir_3b.lock
+[2024-01-05T17:13:47.606364 704841] Result: cache_miss
+[2024-01-05T17:13:47.606367 704841] Result: direct_cache_miss
+[2024-01-05T17:13:47.606369 704841] Result: local_storage_miss
+[2024-01-05T17:13:47.606371 704841] Result: local_storage_read_miss
+[2024-01-05T17:13:47.606373 704841] Result: local_storage_read_miss
+[2024-01-05T17:13:47.606376 704841] Result: local_storage_write
+[2024-01-05T17:13:47.606378 704841] Result: local_storage_write
+[2024-01-05T17:13:47.606381 704841] Result: preprocessed_cache_miss
+[2024-01-05T17:13:47.606384 704841] Acquiring /home/ray47/.cache/Nuitka/ccache/4/9/stats.lock
+[2024-01-05T17:13:47.606434 704841] Acquired /home/ray47/.cache/Nuitka/ccache/4/9/stats.lock
+[2024-01-05T17:13:47.606437 704841] Creating /home/ray47/.cache/Nuitka/ccache/4/9/stats.alive
+[2024-01-05T17:13:47.606498 704841] Releasing /home/ray47/.cache/Nuitka/ccache/4/9/stats.lock
+[2024-01-05T17:13:47.606513 704841] Unlink /home/ray47/.cache/Nuitka/ccache/4/9/stats.alive
+[2024-01-05T17:13:47.606525 704841] Unlink /home/ray47/.cache/Nuitka/ccache/4/9/stats.lock
+[2024-01-05T17:13:47.606527 704841] Released /home/ray47/.cache/Nuitka/ccache/4/9/stats.lock
+[2024-01-05T17:13:47.606532 704841] Trying to acquire /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.lock
+[2024-01-05T17:13:47.606548 704841] Acquired /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.lock
+[2024-01-05T17:13:47.606550 704841] Creating /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.alive
+[2024-01-05T17:13:47.606705 704841] No automatic cleanup needed (size 2.5 MiB, files 36, max size 5.0 GiB)
+[2024-01-05T17:13:47.606713 704841] Releasing /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.lock
+[2024-01-05T17:13:47.606728 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.alive
+[2024-01-05T17:13:47.606744 704841] Unlink /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.lock
+[2024-01-05T17:13:47.606747 704841] Released /home/ray47/.cache/Nuitka/ccache/lock/auto_cleanup.lock
+[2024-01-05T17:13:47.606759 704841] Unlink /run/user/1000/ccache-tmp/stderr.tmp.POowc3.tmp
+[2024-01-05T17:13:47.606766 704841] Unlink /run/user/1000/ccache-tmp/stdout.tmp.agvNlo.tmp
+[2024-01-05T17:13:47.606772 704841] Unlink /run/user/1000/ccache-tmp/stderr.tmp.wTJaor.tmp
+[2024-01-05T17:13:47.606874 704841] Unlink /run/user/1000/ccache-tmp/cpp_stdout.tmp.uyehd4.i
+[2024-01-05T17:13:47.606879 704841] Accumulated stats for inode cache: hits=0, misses=0, errors=0
