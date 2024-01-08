@@ -1,0 +1,76 @@
+[2024-01-08T08:52:28.057574 760325] === CCACHE 4.8.3 STARTED =========================================
+[2024-01-08T08:52:28.057603 760325] Configuration file: /home/ray47/.cache/Nuitka/ccache/ccache.conf
+[2024-01-08T08:52:28.057607 760325] System configuration file: /etc/ccache.conf
+[2024-01-08T08:52:28.057607 760325] Config: (default) absolute_paths_in_stderr = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) base_dir = 
+[2024-01-08T08:52:28.057607 760325] Config: (environment) cache_dir = /home/ray47/.cache/Nuitka/ccache
+[2024-01-08T08:52:28.057607 760325] Config: (default) compiler = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) compiler_check = mtime
+[2024-01-08T08:52:28.057607 760325] Config: (default) compiler_type = auto
+[2024-01-08T08:52:28.057607 760325] Config: (default) compression = true
+[2024-01-08T08:52:28.057607 760325] Config: (default) compression_level = 0
+[2024-01-08T08:52:28.057607 760325] Config: (default) cpp_extension = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) debug = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) debug_dir = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) depend_mode = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) direct_mode = true
+[2024-01-08T08:52:28.057607 760325] Config: (default) disable = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) extra_files_to_hash = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) file_clone = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) hard_link = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) hash_dir = true
+[2024-01-08T08:52:28.057607 760325] Config: (default) ignore_headers_in_manifest = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) ignore_options = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) inode_cache = true
+[2024-01-08T08:52:28.057607 760325] Config: (default) keep_comments_cpp = false
+[2024-01-08T08:52:28.057607 760325] Config: (environment) log_file = /home/ray47/Projects/python/pysimplegui/assistant.onefile-build/ccache-760302.txt
+[2024-01-08T08:52:28.057607 760325] Config: (default) max_files = 0
+[2024-01-08T08:52:28.057607 760325] Config: (default) max_size = 5.0 GiB
+[2024-01-08T08:52:28.057607 760325] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-01-08T08:52:28.057607 760325] Config: (default) namespace = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) path = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) pch_external_checksum = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) prefix_command = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) prefix_command_cpp = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) read_only = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) read_only_direct = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) recache = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) remote_only = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) remote_storage = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) reshare = false
+[2024-01-08T08:52:28.057607 760325] Config: (default) run_second_cpp = true
+[2024-01-08T08:52:28.057607 760325] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-01-08T08:52:28.057607 760325] Config: (default) stats = true
+[2024-01-08T08:52:28.057607 760325] Config: (default) stats_log = 
+[2024-01-08T08:52:28.057607 760325] Config: (default) temporary_dir = /run/user/1000/ccache-tmp
+[2024-01-08T08:52:28.057607 760325] Config: (default) umask = 
+[2024-01-08T08:52:28.057646 760325] Command line: /usr/bin/ccache /usr/bin/gcc -o static_src/OnefileBootstrap.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zlib -I. -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/include -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src -I/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zstd static_src/OnefileBootstrap.c
+[2024-01-08T08:52:28.057656 760325] Hostname: poppy
+[2024-01-08T08:52:28.057660 760325] Working directory: /home/ray47/Projects/python/pysimplegui/assistant.onefile-build
+[2024-01-08T08:52:28.057669 760325] Compiler: /usr/bin/gcc
+[2024-01-08T08:52:28.057673 760325] Compiler type: gcc
+[2024-01-08T08:52:28.057735 760325] Source file: static_src/OnefileBootstrap.c
+[2024-01-08T08:52:28.057739 760325] Object file: static_src/OnefileBootstrap.o
+[2024-01-08T08:52:28.057765 760325] Trying direct lookup
+[2024-01-08T08:52:28.057813 760325] Manifest key: 3bcc50rh9cq0b56ip7vope1opackvs21a
+[2024-01-08T08:52:28.057834 760325] Retrieved 3bcc50rh9cq0b56ip7vope1opackvs21a from local storage (/home/ray47/.cache/Nuitka/ccache/3/b/cc50rh9cq0b56ip7vope1opackvs21aM)
+[2024-01-08T08:52:28.058329 760325] Too new ctime or mtime of onefile_definitions.h, not considering for inode cache
+[2024-01-08T08:52:28.058352 760325] Too new ctime or mtime of onefile_definitions.h, not considering for inode cache
+[2024-01-08T08:52:28.059197 760325] Got result key from manifest
+[2024-01-08T08:52:28.059204 760325] Result key: c350j3453uk5p1qk5atfeu2qli2qe1ogu
+[2024-01-08T08:52:28.059285 760325] Retrieved c350j3453uk5p1qk5atfeu2qli2qe1ogu from local storage (/home/ray47/.cache/Nuitka/ccache/c/3/50j3453uk5p1qk5atfeu2qli2qe1oguR)
+[2024-01-08T08:52:28.059656 760325] Reading embedded entry #0 .o (200344 bytes)
+[2024-01-08T08:52:28.059662 760325] Writing to static_src/OnefileBootstrap.o
+[2024-01-08T08:52:28.059924 760325] Succeeded getting cached result
+[2024-01-08T08:52:28.059934 760325] Result: direct_cache_hit
+[2024-01-08T08:52:28.059937 760325] Result: local_storage_hit
+[2024-01-08T08:52:28.059940 760325] Result: local_storage_read_hit
+[2024-01-08T08:52:28.059943 760325] Result: local_storage_read_hit
+[2024-01-08T08:52:28.059948 760325] Acquiring /home/ray47/.cache/Nuitka/ccache/0/5/stats.lock
+[2024-01-08T08:52:28.060038 760325] Acquired /home/ray47/.cache/Nuitka/ccache/0/5/stats.lock
+[2024-01-08T08:52:28.060043 760325] Creating /home/ray47/.cache/Nuitka/ccache/0/5/stats.alive
+[2024-01-08T08:52:28.060128 760325] Releasing /home/ray47/.cache/Nuitka/ccache/0/5/stats.lock
+[2024-01-08T08:52:28.060152 760325] Unlink /home/ray47/.cache/Nuitka/ccache/0/5/stats.alive
+[2024-01-08T08:52:28.060168 760325] Unlink /home/ray47/.cache/Nuitka/ccache/0/5/stats.lock
+[2024-01-08T08:52:28.060171 760325] Released /home/ray47/.cache/Nuitka/ccache/0/5/stats.lock
+[2024-01-08T08:52:28.060181 760325] Accumulated stats for inode cache: hits=0, misses=0, errors=0

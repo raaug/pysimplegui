@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 import sys, re
-from icecream import ic
 from io import StringIO
 from string import Template
 from slist import slist

@@ -1,6 +1,6 @@
 CC="/usr/bin/ccache" "/usr/bin/gcc"
 CCACHE_DIR=/home/ray47/.cache/Nuitka/ccache
-CCACHE_LOGFILE=/home/ray47/Projects/python/pysimplegui/assistant.onefile-build/ccache-704817.txt
+CCACHE_LOGFILE=/home/ray47/Projects/python/pysimplegui/assistant.onefile-build/ccache-760302.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_ONEFILE_MODE']
