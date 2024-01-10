@@ -11,17 +11,15 @@ wc = len(slist)
 
 green_tuple = tuple()   # Letter is in string and in correct position
 yellow_tuple = tuple()  # Letter is in string but is out of position
-gray_tuple = tuple()   # Letter is not in string
+gray_tuple = tuple()    # Letter is not in string
+
+green_set = set()       # Set of green tuples
+yellow_set = set()      # Set of yellow tuples
+gray_set = set()        # Set of gray tuples
 
 g_temp_set = set()      # Temp variable for assisting in building regex
 y_temp_set = set()      # Temp variable for assisting in building regex
-green_set = set()
-yellow_set = set()
-gray_set = set()
-do_not_add_to_gray = set()
-
-GS = '^[^'              # Start of the gray set
-GE = ']+$'              # End of the gray set
+d_temp_set = set()      # Temp variable for assisting in building regex
 
 # Instructions for assigning the color to the assosciated letter
 inst_line1 = "The color code letters are: 'g' for GREEN, 'y' for YELLOW and 'd' for DarkGray."
@@ -65,6 +63,11 @@ while True:
     yellow = ''
     green = ''
     gray = ''
+    do_not_add_to_gray_set = set()
+    gray_string = ''
+    temp_set = set()
+    DB = "^[^"
+    DE = "]+$"
 
 
     output_list = []
@@ -80,18 +83,24 @@ while True:
         if code[i] == 'd':
             gray_tuple=(word[i], i)
             gray_set.add(gray_tuple)
+
         elif code[i] == 'y':
             yellow_tuple=(word[i], i)
             yellow_set.add(yellow_tuple)
+            do_not_add_to_gray_set.add(word[i])
+            #print(f"yellow_tuple = {yellow_tuple}")
+            #print(f"yellow_set = {yellow_set}")
         elif code[i] == 'g':
             green_tuple=(word[i],i)
             green_set.add(green_tuple)
+            do_not_add_to_gray_set.add(word[i])
+            #print(f"green_tuple = {green_tuple}")
+            #print(f"green_set = {green_set}")
     
 
     # If you repeat a letter and it occurs in the solution more than once the second occurance will show as gray.
     # You do not waht to add this letter to the gray-list as it will filter out all occurnaces of this letter.
     for letter, position in green_set:
-        do_not_add_to_gray.add(letter)
         s = Template("(?=^.{$position}$letter)")
         g_temp_set.add(s.substitute(position=position, letter=letter))
     for item in g_temp_set:
@@ -102,19 +111,23 @@ while True:
         # One that finds the letter in the string
         # The other that excludes strings with that letter in the current position.
     for letter, position in yellow_set:
-        do_not_add_to_gray.add(letter)
         s = Template("(?=.*$letter)(?!^.{$position}$letter)")
         y_temp_set.add(s.substitute(position=position, letter=letter))
     for item in y_temp_set:
         yellow += item
 
     for letter, position in gray_set:
-        if letter not in do_not_add_to_gray:
-            gray += letter
+        if letter not in do_not_add_to_gray_set:
+            temp_set.add(letter)
+        s = Template("(?!^.{$position}$letter)")
+        d_temp_set.add(s.substitute(position=position, letter=letter))
+    for item in d_temp_set:
+        gray += item
     
     # Final assembly of the regular expression filter
-    regex_string = green + yellow + GS + gray + GE
-    # ic(regex_string)
+    gray_string = ''.join(temp_set)
+    regex_string = green + yellow + gray + DB + gray_string + DE
+    print(regex_string)
     
     # Compile the regex to assign it to concice variable
     pattern = re.compile(regex_string)
