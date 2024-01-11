@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+MAX_GUESSES = 6
 import sys, re
 from io import StringIO
 from string import Template
@@ -6,7 +7,6 @@ from slist import slist
 
 
 WORD_LENGTH = 5
-MAX_GUESSES = 6
 wc = len(slist)
 
 green_tuple = tuple()   # Letter is in string and in correct position
