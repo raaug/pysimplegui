@@ -66,13 +66,10 @@ while True:
     do_not_add_to_gray_set = set()
     gray_string = ''
     temp_set = set()
-    DB = "^[^"
-    DE = "]+$"
-
 
     output_list = []
     wc = len(output_list)
-    window['-OUTPUT-'].update(output_list)  # Update the multiline element with the output
+    window['-OUTPUT-'].update(output_list)  # Update the multiline element with the output list.
 
     # Color code each letter and its position so that we can begin to generate the regular expression filter.
     # Use sets for the storage to avoid repetition.
@@ -106,7 +103,7 @@ while True:
     for item in g_temp_set:
         green += item
 
-    # The same caution applies to yellow letter. Be careful what you add to the gray-set
+    # The same caution applies to yellow letter. Be careful what you add to the gray-set.
     # The yellow letter requires two entries:
         # One that finds the letter in the string
         # The other that excludes strings with that letter in the current position.
@@ -121,23 +118,26 @@ while True:
             temp_set.add(letter)
         s = Template("(?!^.{$position}$letter)")
         d_temp_set.add(s.substitute(position=position, letter=letter))
-    for item in d_temp_set:
+
+    for item in d_temp_set: # The accumulation of all the positional dark gray letters.
         gray += item
+
+    gray_string = ''.join(temp_set)     # gray_string is a stringafied version ot the set of the "do_not_add_letters".
+    s = Template("^[^$gray_string]+$$") # This Template prepends "^[^" and postpends "]+$" Notice the escaped $ by $$.
+    gray_string = s.substitute(gray_string=gray_string)
+
+    # Final assembly of the regular expression string.
+    regex_string = green + yellow + gray + gray_string
     
-    # Final assembly of the regular expression filter
-    gray_string = ''.join(temp_set)
-    regex_string = green + yellow + gray + DB + gray_string + DE
-    print(regex_string)
-    
-    # Compile the regex to assign it to concice variable
+    # Compile the regex to assign it to concice variable.
     pattern = re.compile(regex_string)
 
     for item in slist:
         if pattern.match(item):
-            output_list.append(item)
+            output_list.append(item) # output list is a list of all the remaining elegible words.
 
-    wc = len(output_list)
-    window['-OUTPUT-'].update(' '.join(output_list))  # Update the contents of the multiline element, removing the brackets and the commas
-    window['-WC-'].update(f'Remaining word count = {wc}')
+    wc = len(output_list) # The word count of all the remaining elegible words.
+    window['-OUTPUT-'].update(' '.join(output_list))  # remove the brackets and commas and pass the list to the display window.
+    window['-WC-'].update(f'Remaining word count = {wc}') # Displays the remaining word count.
 
 window.close()
