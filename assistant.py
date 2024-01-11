@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-MAX_GUESSES = 6
 import sys, re
 from io import StringIO
 from string import Template
