@@ -1,7 +1,7 @@
 /* Generated code for Python module 'PySimpleGUI'
- * created by Nuitka version 1.9.6
+ * created by Nuitka version 2.1
  *
- * This code is in part copyright 2023 Kay Hayen.
+ * This code is in part copyright 2024 Kay Hayen.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -82,7 +82,7 @@ static PyCodeObject *codeobj_efd40e1810d4d09e6db9e8149bae3396;
 
 static void createModuleCodeObjects(void) {
     module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[20]); CHECK_OBJECT(module_filename_obj);
-    codeobj_efd40e1810d4d09e6db9e8149bae3396 = MAKE_CODE_OBJECT(module_filename_obj, 1, 0, mod_consts[21], mod_consts[21], NULL, NULL, 0, 0, 0);
+    codeobj_efd40e1810d4d09e6db9e8149bae3396 = MAKE_CODE_OBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[21], mod_consts[21], NULL, NULL, 0, 0, 0);
 }
 
 // The module function declarations.
@@ -149,7 +149,7 @@ static PyObject *_reduce_compiled_function(PyObject *self, PyObject *args, PyObj
     CHECK_OBJECT_DEEP(code_object_desc);
 
 
-    PyObject *result = MAKE_TUPLE_EMPTY(6);
+    PyObject *result = MAKE_TUPLE_EMPTY(8);
     PyTuple_SET_ITEM(result, 0, PyLong_FromLong(offset));
     PyTuple_SET_ITEM(result, 1, code_object_desc);
     PyTuple_SET_ITEM0(result, 2, function->m_defaults);
@@ -173,6 +173,27 @@ static PyObject *_reduce_compiled_function(PyObject *self, PyObject *args, PyObj
     PyTuple_SET_ITEM0(result, 6, Py_None);
 #endif
 
+    PyObject *closure = PyObject_GetAttr(
+        (PyObject *)function,
+        const_str_plain___closure__
+    );
+
+    if (closure != Py_None) {
+        for (Py_ssize_t i=0; i < PyTuple_GET_SIZE(closure); i++) {
+            struct Nuitka_CellObject *cell = (struct Nuitka_CellObject *)PyTuple_GET_ITEM(closure, i);
+
+            assert(Nuitka_Cell_Check((PyObject *)cell));
+
+            PyTuple_SET_ITEM0(
+                closure,
+                i,
+                cell->ob_ref
+            );
+        }
+    }
+
+    PyTuple_SET_ITEM(result, 7, closure);
+
     CHECK_OBJECT_DEEP(result);
 
     return result;
@@ -192,8 +213,9 @@ static PyObject *_create_compiled_function(PyObject *self, PyObject *args, PyObj
     PyObject *doc;
     PyObject *constant_return_value;
     PyObject *function_qualname;
+    PyObject *closure;
 
-    if (!PyArg_ParseTuple(args, "OOOOOO:create_compiled_function", &function_index, &code_object_desc, &defaults, &kw_defaults, &doc, &constant_return_value, &function_qualname, NULL)) {
+    if (!PyArg_ParseTuple(args, "OOOOOOOO:create_compiled_function", &function_index, &code_object_desc, &defaults, &kw_defaults, &doc, &constant_return_value, &function_qualname, &closure, NULL)) {
         return NULL;
     }
 
@@ -212,6 +234,7 @@ static PyObject *_create_compiled_function(PyObject *self, PyObject *args, PyObj
         defaults,
         kw_defaults,
         doc,
+        closure,
         function_table_PySimpleGUI,
         sizeof(function_table_PySimpleGUI) / sizeof(function_impl_code)
     );
@@ -766,6 +789,13 @@ PyObject *modulecode_PySimpleGUI(PyThreadState *tstate, PyObject *module, struct
 
     // Report to PGO about leaving the module without error.
     PGO_onModuleExit("PySimpleGUI", false);
+
+#if defined(_NUITKA_MODULE) && 0
+    PyObject *post_load = IMPORT_EMBEDDED_MODULE(tstate, "PySimpleGUI" "-postLoad");
+    if (post_load == NULL) {
+        return NULL;
+    }
+#endif
 
     Py_INCREF(module_PySimpleGUI);
     return module_PySimpleGUI;

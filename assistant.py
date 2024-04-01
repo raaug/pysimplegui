@@ -1,12 +1,21 @@
+#!/usr/bin/env python3
+
 import PySimpleGUI as sg
-import sys, re
-from io import StringIO
+import re
 from string import Template
 from slist import slist
 
 
 WORD_LENGTH = 5
 wc = len(slist)
+
+regex_string = ''
+yellow = ''
+green = ''
+gray = ''
+do_not_add_to_gray_set = set()
+gray_string = ''
+temp_set = set()
 
 green_tuple = tuple()   # Letter is in string and in correct position
 yellow_tuple = tuple()  # Letter is in string but is out of position
@@ -23,9 +32,9 @@ d_temp_set = set()      # Temp variable for assisting in building regex
 # Instructions for assigning the color to the assosciated letter
 inst_line1 = "The color code letters are: 'g' for GREEN, 'y' for YELLOW and 'd' for DarkGray."
 inst_line2 = "For example: gyddg would be green-yellow-darkgray-darkgray-green."
-inst_line3 = "Exit to refresh and play again\n"
+inst_line3 = "Exit and restart to refresh and play again.\n"
 
-sg.theme('GreenTan')
+sg.theme('Light Blue2')
 layout = [
     [sg.Text("WORDLE ASSISTANT", font='Times 24', expand_x=True, justification='center')],
     [sg.Text(inst_line1)],
@@ -33,17 +42,16 @@ layout = [
     [sg.Text(inst_line3)],
     [sg.Text('Input a five-letter word:',font='Helvetica 14'), sg.InputText(key='-WORD-', font='Helvetica 14', size=(6))],
     [sg.Text('Input a five-letter code:',font='Helvetica 14'), sg.InputText(key='-CODE-', font='Helvetica 14', size=(6))],
-    [sg.Button('Submit'), sg.Button('Exit'), sg.Text(f"Initial word count = {wc}", key="-WC-")],
+    [sg.Button('Submit',bind_return_key=True), sg.Button('Exit'), sg.Text(f"Initial word count = {wc}", key="-WC-")],
     [sg.Multiline(' '.join(slist), size=(36, 12), key='-OUTPUT-', pad = 10, font=('Courier', 16, 'bold'))]
 ]
 
 window = sg.Window('Wordle Assistant', layout)
 
-
 while True:
     event, values = window.read()
 
-    if event == sg.WIN_CLOSED or event == 'Exit':
+    if event == sg.WIN_CLOSED or event in (None, 'Exit'):
         break
     elif event == 'Submit':
         word = values['-WORD-'].lower()
@@ -57,15 +65,6 @@ while True:
         sg.popup("code must be 5 letters and consists of 'g', 'y' and 'd' only!")
         break
 
-        
-    regex_string = ''
-    yellow = ''
-    green = ''
-    gray = ''
-    do_not_add_to_gray_set = set()
-    gray_string = ''
-    temp_set = set()
-
     output_list = []
     wc = len(output_list)
     window['-OUTPUT-'].update(output_list)  # Update the multiline element with the output list.
@@ -74,7 +73,7 @@ while True:
     # Use sets for the storage to avoid repetition.
     # If a letter is gray the letter is added to the gray-list and those words will be filtered out.
     # Caution! If you guess a letter twice and the solution only has on occurance the second letter will show gray.
-    # You do not want to add the second occurance to the gray-list as it will filter out an accepable word.
+    # You do not want to add the second occurance to the gray-list as it will filter out accepable words.
     for i in range(WORD_LENGTH):
         if code[i] == 'd':
             gray_tuple=(word[i], i)

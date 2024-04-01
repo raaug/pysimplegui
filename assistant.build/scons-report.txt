@@ -1,14 +1,14 @@
-CC="/usr/bin/ccache" "/usr/bin/gcc"
+CC=gcc
 CCACHE_DIR=/home/ray47/.cache/Nuitka/ccache
-CCACHE_LOGFILE=/home/ray47/Projects/python/pysimplegui/assistant.build/ccache-759433.txt
+CCACHE_LOGFILE=/home/ray47/python/pysimplegui/assistant.build/ccache-442384.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
-CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_STANDALONE', '_NUITKA_ONEFILE_MODE', '_NUITKA_ONEFILE_TEMP_BOOL', '_NUITKA_CONSTANTS_FROM_INCBIN', '_NUITKA_FROZEN=152', '_NUITKA_EXE']
+CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_STANDALONE', '_NUITKA_ONEFILE_MODE', '_NUITKA_ONEFILE_TEMP_BOOL', 'Py_NO_ENABLE_SHARED', '_NUITKA_STATIC_LIBPYTHON', '_NUITKA_USE_UNEXPOSED_API', '_NUITKA_CONSTANTS_FROM_INCBIN', '_NUITKA_FROZEN=151', '_NUITKA_EXE']
 CPPDEFPREFIX=-D
 CPPDEFSUFFIX=
-CPPPATH=['/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/inline_copy/zlib', '/usr/include/python3.11', '.', '/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/include', '/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src']
+CPPPATH=['/home/ray47/.local/lib/python3.10/site-packages/nuitka/build/inline_copy/zlib', '/usr/include/python3.10', '.', '/home/ray47/.local/lib/python3.10/site-packages/nuitka/build/include', '/home/ray47/.local/lib/python3.10/site-packages/nuitka/build/static_src', '/home/ray47/.local/lib/python3.10/site-packages/nuitka/build/inline_copy/libbacktrace']
 CPPSUFFIXES=['.c', '.C', '.cxx', '.cpp', '.c++', '.cc', '.h', '.H', '.hxx', '.hpp', '.hh', '.F', '.fpp', '.FPP', '.m', '.mm', '.S', '.spp', '.SPP', '.sx']
-CXX="/usr/bin/ccache" "/usr/bin/gcc"
+CXX=g++
 CXXCOM=$CXX -o $TARGET -c $CXXFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CXXFILESUFFIX=.cc
 INCPREFIX=-I
@@ -28,10 +28,9 @@ LIBLINKSUFFIX=
 LIBPATH=['/usr/lib']
 LIBPREFIX=lib
 LIBPREFIXES=['$LIBPREFIX']
-LIBS=['dl', 'm', 'python3.11']
 LIBSUFFIX=.a
 LIBSUFFIXES=['$LIBSUFFIX', '$SHLIBSUFFIX']
-LINK="/usr/bin/gcc"
+LINK=$SMARTLINK
 LINKCOM=$LINK -o $TARGET $LINKFLAGS $__RPATH @"./@link_input.txt" $_LIBDIRFLAGS $_LIBFLAGS
 OBJPREFIX=
 OBJSUFFIX=.o
@@ -60,4 +59,4 @@ clang_mode=False
 msvc_mode=False
 mingw_mode=False
 clangcl_mode=False
-PATH=/home/ray47/Projects/python/pysimplegui/.venv/bin:/usr/bin/codium:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/ray47/.local/bin
+PATH=/home/ray47/Projects/python/pysimplegui/.venv/bin:/usr/bin/codium:/home/ray47/.local/bin:/home/ray47/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ray47/.local/bin:/home/ray47/.local/bin:/home/ray47/.local/bin

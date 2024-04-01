@@ -20,8 +20,8 @@
 #include "stdbool.h"
 #endif
 
-#if 344 > 0
-static unsigned char *bytecode_data[344];
+#if 330 > 0
+static unsigned char *bytecode_data[330];
 #else
 static unsigned char **bytecode_data = NULL;
 #endif
@@ -30,12 +30,432 @@ static unsigned char **bytecode_data = NULL;
  * binary or module, or put along this binary as extension modules. We do
  * our own loading for each of these.
  */
+extern PyObject *modulecode_PIL(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$BlpImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$BmpImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$BufrStubImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$CurImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$DcxImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$DdsImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$EpsImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$FitsStubImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$FliImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$FpxImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$FtexImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$GbrImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$GifImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$GimpGradientFile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$GimpPaletteFile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$GribStubImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$Hdf5StubImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$IcnsImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$IcoImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$Image(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageChops(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageColor(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageFile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageFilter(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageGrab(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageMode(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageOps(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImagePalette(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageSequence(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImageShow(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$ImtImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$IptcImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$Jpeg2KImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$JpegImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$JpegPresets(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$McIdasImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$MicImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$MpegImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$MpoImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$MspImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PaletteFile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PalmImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PcdImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PcxImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PdfImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PdfParser(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PixarImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PngImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PpmImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PsdImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$PyAccess(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$SgiImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$SpiderImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$SunImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$TgaImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$TiffImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$TiffTags(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$WebPImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$WmfImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$XVThumbImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$XbmImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$XpmImagePlugin(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$_binary(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$_util(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$_version(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_PIL$features(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
 extern PyObject *modulecode_PySimpleGUI(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
 extern PyObject *modulecode_PySimpleGUI$PySimpleGUI(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
 extern PyObject *modulecode___main__(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_olefile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
+extern PyObject *modulecode_olefile$olefile(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
 extern PyObject *modulecode_slist(PyThreadState *tstate, PyObject *, struct Nuitka_MetaPathBasedLoaderEntry const *);
 
 static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
+    {"PIL", modulecode_PIL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_PACKAGE_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.BlpImagePlugin", modulecode_PIL$BlpImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.BmpImagePlugin", modulecode_PIL$BmpImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.BufrStubImagePlugin", modulecode_PIL$BufrStubImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.CurImagePlugin", modulecode_PIL$CurImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.DcxImagePlugin", modulecode_PIL$DcxImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.DdsImagePlugin", modulecode_PIL$DdsImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.EpsImagePlugin", modulecode_PIL$EpsImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.FitsStubImagePlugin", modulecode_PIL$FitsStubImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.FliImagePlugin", modulecode_PIL$FliImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.FpxImagePlugin", modulecode_PIL$FpxImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.FtexImagePlugin", modulecode_PIL$FtexImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.GbrImagePlugin", modulecode_PIL$GbrImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.GifImagePlugin", modulecode_PIL$GifImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.GimpGradientFile", modulecode_PIL$GimpGradientFile, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.GimpPaletteFile", modulecode_PIL$GimpPaletteFile, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.GribStubImagePlugin", modulecode_PIL$GribStubImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.Hdf5StubImagePlugin", modulecode_PIL$Hdf5StubImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.IcnsImagePlugin", modulecode_PIL$IcnsImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.IcoImagePlugin", modulecode_PIL$IcoImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImImagePlugin", modulecode_PIL$ImImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.Image", modulecode_PIL$Image, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageChops", modulecode_PIL$ImageChops, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageColor", modulecode_PIL$ImageColor, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageFile", modulecode_PIL$ImageFile, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageFilter", modulecode_PIL$ImageFilter, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageGrab", modulecode_PIL$ImageGrab, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageMode", modulecode_PIL$ImageMode, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageOps", modulecode_PIL$ImageOps, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImagePalette", modulecode_PIL$ImagePalette, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageSequence", modulecode_PIL$ImageSequence, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImageShow", modulecode_PIL$ImageShow, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.ImtImagePlugin", modulecode_PIL$ImtImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.IptcImagePlugin", modulecode_PIL$IptcImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.Jpeg2KImagePlugin", modulecode_PIL$Jpeg2KImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.JpegImagePlugin", modulecode_PIL$JpegImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.JpegPresets", modulecode_PIL$JpegPresets, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.McIdasImagePlugin", modulecode_PIL$McIdasImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.MicImagePlugin", modulecode_PIL$MicImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.MpegImagePlugin", modulecode_PIL$MpegImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.MpoImagePlugin", modulecode_PIL$MpoImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.MspImagePlugin", modulecode_PIL$MspImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PaletteFile", modulecode_PIL$PaletteFile, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PalmImagePlugin", modulecode_PIL$PalmImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PcdImagePlugin", modulecode_PIL$PcdImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PcxImagePlugin", modulecode_PIL$PcxImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PdfImagePlugin", modulecode_PIL$PdfImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PdfParser", modulecode_PIL$PdfParser, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PixarImagePlugin", modulecode_PIL$PixarImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PngImagePlugin", modulecode_PIL$PngImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PpmImagePlugin", modulecode_PIL$PpmImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PsdImagePlugin", modulecode_PIL$PsdImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.PyAccess", modulecode_PIL$PyAccess, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.SgiImagePlugin", modulecode_PIL$SgiImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.SpiderImagePlugin", modulecode_PIL$SpiderImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.SunImagePlugin", modulecode_PIL$SunImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.TgaImagePlugin", modulecode_PIL$TgaImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.TiffImagePlugin", modulecode_PIL$TiffImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.TiffTags", modulecode_PIL$TiffTags, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.WebPImagePlugin", modulecode_PIL$WebPImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.WmfImagePlugin", modulecode_PIL$WmfImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.XVThumbImagePlugin", modulecode_PIL$XVThumbImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.XbmImagePlugin", modulecode_PIL$XbmImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.XpmImagePlugin", modulecode_PIL$XpmImagePlugin, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL._binary", modulecode_PIL$_binary, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL._imaging", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL._util", modulecode_PIL$_util, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL._version", modulecode_PIL$_version, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL._webp", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
+    {"PIL.features", modulecode_PIL$features, 0, 0, NUITKA_TRANSLATED_FLAG
+#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
+, NULL
+#endif
+},
     {"PySimpleGUI", modulecode_PySimpleGUI, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
@@ -47,11 +467,6 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 #endif
 },
     {"__main__", modulecode___main__, 0, 0, NUITKA_TRANSLATED_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_blake2", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -96,17 +511,7 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"_csv", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
     {"_ctypes", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_datetime", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -121,17 +526,7 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"_heapq", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
     {"_lzma", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_md5", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -146,47 +541,7 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"_pickle", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_posixsubprocess", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
     {"_queue", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_random", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_sha1", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_sha256", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_sha3", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_sha512", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_socket", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -196,22 +551,7 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"_statistics", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_struct", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
     {"_tkinter", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"_typing", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -221,32 +561,17 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"array", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+    {"mmap", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"binascii", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+    {"olefile", modulecode_olefile, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"fcntl", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"grp", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"math", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"select", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+    {"olefile.olefile", modulecode_olefile$olefile, 0, 0, NUITKA_TRANSLATED_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -261,1732 +586,1652 @@ static struct Nuitka_MetaPathBasedLoaderEntry meta_path_loader_entries[] = {
 , NULL
 #endif
 },
-    {"unicodedata", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+    {"__future__", NULL, 0, 4095, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"zlib", NULL, 0, 0, NUITKA_TRANSLATED_FLAG | NUITKA_EXTENSION_MODULE_FLAG
+    {"_aix_support", NULL, 1, 2843, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"__future__", NULL, 0, 4875, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_bootsubprocess", NULL, 2, 2258, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"__hello__", NULL, 1, 1039, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_collections_abc", NULL, 3, 32889, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"__phello__", NULL, 2, 384, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"_compat_pickle", NULL, 4, 5836, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"__phello__.spam", NULL, 3, 389, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_compression", NULL, 5, 4476, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_aix_support", NULL, 4, 4328, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_markupbase", NULL, 6, 7536, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_bootsubprocess", NULL, 5, 4421, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_osx_support", NULL, 7, 11499, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_collections_abc", NULL, 6, 51177, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_py_abc", NULL, 8, 4647, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_compat_pickle", NULL, 7, 7477, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_pydecimal", NULL, 9, 157700, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_compression", NULL, 8, 8011, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_pyio", NULL, 10, 73618, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_markupbase", NULL, 9, 14043, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_sitebuiltins", NULL, 11, 3511, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_osx_support", NULL, 10, 19832, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_strptime", NULL, 12, 15909, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_py_abc", NULL, 11, 7839, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_sysconfigdata__linux_x86_64-linux-gnu", NULL, 13, 35349, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_pydecimal", NULL, 12, 244222, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_sysconfigdata__x86_64-linux-gnu", NULL, 14, 35343, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_pyio", NULL, 13, 120011, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_threading_local", NULL, 15, 6503, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_sitebuiltins", NULL, 14, 5385, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"_weakrefset", NULL, 16, 7572, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_strptime", NULL, 15, 27888, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"abc", NULL, 17, 6715, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_sysconfigdata__linux_x86_64-linux-gnu", NULL, 16, 53164, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"argparse", NULL, 18, 63503, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_threading_local", NULL, 17, 9166, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ast", NULL, 19, 55703, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"_weakrefset", NULL, 18, 13101, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"base64", NULL, 20, 17126, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"abc", NULL, 19, 9002, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"binhex", NULL, 21, 12834, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"argparse", NULL, 20, 113381, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"bisect", NULL, 22, 2552, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ast", NULL, 21, 109625, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"bz2", NULL, 23, 10834, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"base64", NULL, 22, 28408, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"calendar", NULL, 24, 26267, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"bisect", NULL, 23, 3662, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"cgi", NULL, 25, 26687, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"bz2", NULL, 24, 16124, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"cgitb", NULL, 26, 9962, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"calendar", NULL, 25, 44711, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"chunk", NULL, 27, 4824, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"cgi", NULL, 26, 43823, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"cmd", NULL, 28, 12671, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"cgitb", NULL, 27, 18843, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"code", NULL, 29, 9921, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"chunk", NULL, 28, 7388, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"codecs", NULL, 30, 33183, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"cmd", NULL, 29, 20559, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"codeop", NULL, 31, 5559, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"code", NULL, 30, 13863, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"collections", NULL, 32, 48408, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"codecs", NULL, 31, 45206, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"collections.abc", NULL, 33, 202, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"codeop", NULL, 32, 7383, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"colorsys", NULL, 34, 3229, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"collections", NULL, 33, 78170, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"configparser", NULL, 35, 45422, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"collections.abc", NULL, 34, 258, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"contextlib", NULL, 36, 20859, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"colorsys", NULL, 35, 4913, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"contextvars", NULL, 37, 210, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"configparser", NULL, 36, 71656, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"copy", NULL, 38, 6960, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"contextlib", NULL, 37, 32575, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"copyreg", NULL, 39, 4647, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"contextvars", NULL, 38, 261, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"crypt", NULL, 40, 3528, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"copy", NULL, 39, 11149, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"csv", NULL, 41, 11762, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"copyreg", NULL, 40, 8142, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ctypes", NULL, 42, 15837, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"crypt", NULL, 41, 5814, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ctypes._endian", NULL, 43, 1865, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"csv", NULL, 42, 20018, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"dataclasses", NULL, 44, 26542, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ctypes", NULL, 43, 26754, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"datetime", NULL, 45, 56497, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ctypes._endian", NULL, 44, 3944, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"decimal", NULL, 46, 326, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"dataclasses", NULL, 45, 47132, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"difflib", NULL, 47, 58869, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"datetime", NULL, 46, 101298, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"dis", NULL, 48, 15620, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"decimal", NULL, 47, 505, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email", NULL, 49, 1515, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"difflib", NULL, 48, 81609, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email._encoded_words", NULL, 50, 5704, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"dis", NULL, 49, 36688, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email._header_value_parser", NULL, 51, 77759, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email", NULL, 50, 2063, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"email._parseaddr", NULL, 52, 12476, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email._encoded_words", NULL, 51, 9079, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email._policybase", NULL, 53, 14746, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email._header_value_parser", NULL, 52, 149429, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.base64mime", NULL, 54, 3204, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email._parseaddr", NULL, 53, 24262, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.charset", NULL, 55, 11539, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email._policybase", NULL, 54, 19201, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.contentmanager", NULL, 56, 7353, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.base64mime", NULL, 55, 4313, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.encoders", NULL, 57, 1591, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.charset", NULL, 56, 15983, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.errors", NULL, 58, 5666, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.contentmanager", NULL, 57, 13792, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.feedparser", NULL, 59, 10542, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.encoders", NULL, 58, 2348, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.generator", NULL, 60, 12565, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.errors", NULL, 59, 8407, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.header", NULL, 61, 16426, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.feedparser", NULL, 60, 21455, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.headerregistry", NULL, 62, 21869, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.generator", NULL, 61, 21561, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.iterators", NULL, 63, 1932, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.header", NULL, 62, 26938, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.message", NULL, 64, 37768, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.headerregistry", NULL, 63, 33715, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.parser", NULL, 65, 5637, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.iterators", NULL, 64, 3125, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.policy", NULL, 66, 9617, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.message", NULL, 65, 58857, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.quoprimime", NULL, 67, 7587, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.parser", NULL, 66, 7346, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"email.utils", NULL, 68, 9650, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.policy", NULL, 67, 12395, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings", NULL, 69, 3830, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.quoprimime", NULL, 68, 11199, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.aliases", NULL, 70, 10885, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"email.utils", NULL, 69, 15438, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.ascii", NULL, 71, 1776, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings", NULL, 70, 6412, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"encodings.base64_codec", NULL, 72, 2211, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.aliases", NULL, 71, 12611, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.big5", NULL, 73, 1330, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.ascii", NULL, 72, 2672, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.big5hkscs", NULL, 74, 1340, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.base64_codec", NULL, 73, 3285, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.bz2_codec", NULL, 75, 3050, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.big5", NULL, 74, 2097, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.charmap", NULL, 76, 2683, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.big5hkscs", NULL, 75, 2107, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp037", NULL, 77, 2314, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.bz2_codec", NULL, 76, 4809, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1006", NULL, 78, 2390, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.charmap", NULL, 77, 4083, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1026", NULL, 79, 2318, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp037", NULL, 78, 3348, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1125", NULL, 80, 9255, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1006", NULL, 79, 3424, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1140", NULL, 81, 2304, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1026", NULL, 80, 3352, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1250", NULL, 82, 2341, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1125", NULL, 81, 14216, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1251", NULL, 83, 2338, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1140", NULL, 82, 3338, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1252", NULL, 84, 2341, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1250", NULL, 83, 3375, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1253", NULL, 85, 2354, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1251", NULL, 84, 3372, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1254", NULL, 86, 2343, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1252", NULL, 85, 3375, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1255", NULL, 87, 2362, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1253", NULL, 86, 3388, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1256", NULL, 88, 2340, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1254", NULL, 87, 3377, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1257", NULL, 89, 2348, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1255", NULL, 88, 3396, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp1258", NULL, 90, 2346, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1256", NULL, 89, 3374, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp273", NULL, 91, 2300, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1257", NULL, 90, 3382, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp424", NULL, 92, 2344, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp1258", NULL, 91, 3380, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp437", NULL, 93, 8888, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp273", NULL, 92, 3334, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp500", NULL, 94, 2314, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp424", NULL, 93, 3378, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp720", NULL, 95, 2411, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp437", NULL, 94, 13849, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp737", NULL, 96, 9290, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp500", NULL, 95, 3348, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp775", NULL, 97, 8928, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp720", NULL, 96, 3445, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp850", NULL, 98, 8469, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp737", NULL, 97, 14251, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp852", NULL, 99, 8944, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp775", NULL, 98, 13889, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp855", NULL, 100, 9257, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp850", NULL, 99, 13430, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp856", NULL, 101, 2376, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp852", NULL, 100, 13905, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp857", NULL, 102, 8368, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp855", NULL, 101, 14218, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp858", NULL, 103, 8439, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp856", NULL, 102, 3410, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp860", NULL, 104, 8859, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp857", NULL, 103, 13225, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp861", NULL, 105, 8884, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp858", NULL, 104, 13400, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp862", NULL, 106, 9117, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp860", NULL, 105, 13820, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp863", NULL, 107, 8880, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp861", NULL, 106, 13845, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp864", NULL, 108, 9027, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp862", NULL, 107, 14078, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp865", NULL, 109, 8884, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp863", NULL, 108, 13841, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp866", NULL, 110, 9297, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp864", NULL, 109, 13880, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp869", NULL, 111, 8932, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp865", NULL, 110, 13845, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp874", NULL, 112, 2442, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp866", NULL, 111, 14258, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp875", NULL, 113, 2311, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp869", NULL, 112, 13782, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp932", NULL, 114, 1332, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp874", NULL, 113, 3476, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp949", NULL, 115, 1332, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp875", NULL, 114, 3345, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.cp950", NULL, 116, 1332, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp932", NULL, 115, 2099, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.euc_jis_2004", NULL, 117, 1346, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp949", NULL, 116, 2099, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.euc_jisx0213", NULL, 118, 1346, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.cp950", NULL, 117, 2099, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.euc_jp", NULL, 119, 1334, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.euc_jis_2004", NULL, 118, 2113, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.euc_kr", NULL, 120, 1334, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.euc_jisx0213", NULL, 119, 2113, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.gb18030", NULL, 121, 1336, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.euc_jp", NULL, 120, 2101, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.gb2312", NULL, 122, 1334, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.euc_kr", NULL, 121, 2101, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.gbk", NULL, 123, 1328, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.gb18030", NULL, 122, 2103, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.hex_codec", NULL, 124, 2198, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.gb2312", NULL, 123, 2101, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.hp_roman8", NULL, 125, 2515, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.gbk", NULL, 124, 2095, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.hz", NULL, 126, 1326, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.hex_codec", NULL, 125, 3272, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.idna", NULL, 127, 5563, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.hp_roman8", NULL, 126, 3549, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp", NULL, 128, 1347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.hz", NULL, 127, 2093, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp_1", NULL, 129, 1351, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.idna", NULL, 128, 11507, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp_2", NULL, 130, 1351, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp", NULL, 129, 2114, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp_2004", NULL, 131, 1357, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp_1", NULL, 130, 2118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp_3", NULL, 132, 1351, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp_2", NULL, 131, 2118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_jp_ext", NULL, 133, 1355, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp_2004", NULL, 132, 2125, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso2022_kr", NULL, 134, 1347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp_3", NULL, 133, 2118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_1", NULL, 135, 2313, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_jp_ext", NULL, 134, 2123, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_10", NULL, 136, 2318, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso2022_kr", NULL, 135, 2114, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_11", NULL, 137, 2412, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_1", NULL, 136, 3347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_13", NULL, 138, 2321, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_10", NULL, 137, 3352, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_14", NULL, 139, 2339, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_11", NULL, 138, 3446, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_15", NULL, 140, 2318, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_13", NULL, 139, 3355, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_16", NULL, 141, 2320, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_14", NULL, 140, 3373, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_2", NULL, 142, 2313, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_15", NULL, 141, 3352, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_3", NULL, 143, 2320, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_16", NULL, 142, 3354, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_4", NULL, 144, 2313, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_2", NULL, 143, 3347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_5", NULL, 145, 2314, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_3", NULL, 144, 3354, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_6", NULL, 146, 2358, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_4", NULL, 145, 3347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_7", NULL, 147, 2321, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_5", NULL, 146, 3348, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_8", NULL, 148, 2352, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_6", NULL, 147, 3392, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.iso8859_9", NULL, 149, 2313, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_7", NULL, 148, 3355, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.johab", NULL, 150, 1332, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_8", NULL, 149, 3386, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.koi8_r", NULL, 151, 2365, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.iso8859_9", NULL, 150, 3347, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.koi8_t", NULL, 152, 2276, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.johab", NULL, 151, 2099, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.koi8_u", NULL, 153, 2351, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.koi8_r", NULL, 152, 3399, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.kz1048", NULL, 154, 2328, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.koi8_t", NULL, 153, 3310, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.latin_1", NULL, 155, 1788, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.koi8_u", NULL, 154, 3385, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_arabic", NULL, 156, 8774, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.kz1048", NULL, 155, 3362, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_croatian", NULL, 157, 2360, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.latin_1", NULL, 156, 2684, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_cyrillic", NULL, 158, 2350, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_arabic", NULL, 157, 13735, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_farsi", NULL, 159, 2294, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_croatian", NULL, 158, 3394, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_greek", NULL, 160, 2334, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_cyrillic", NULL, 159, 3384, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_iceland", NULL, 161, 2353, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_farsi", NULL, 160, 3328, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_latin2", NULL, 162, 2494, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_greek", NULL, 161, 3368, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_roman", NULL, 163, 2351, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_iceland", NULL, 162, 3387, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_romanian", NULL, 164, 2361, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_latin2", NULL, 163, 3528, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.mac_turkish", NULL, 165, 2354, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_roman", NULL, 164, 3385, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.palmos", NULL, 166, 2341, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_romanian", NULL, 165, 3395, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.ptcp154", NULL, 167, 2435, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.mac_turkish", NULL, 166, 3388, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.punycode", NULL, 168, 6269, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.palmos", NULL, 167, 3375, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.quopri_codec", NULL, 169, 2281, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.ptcp154", NULL, 168, 3469, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.raw_unicode_escape", NULL, 170, 1922, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.punycode", NULL, 169, 10724, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.rot_13", NULL, 171, 2955, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.quopri_codec", NULL, 170, 3576, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.shift_jis", NULL, 172, 1340, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.raw_unicode_escape", NULL, 171, 2814, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.shift_jis_2004", NULL, 173, 1350, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.rot_13", NULL, 172, 4796, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.shift_jisx0213", NULL, 174, 1350, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.shift_jis", NULL, 173, 2107, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.tis_620", NULL, 175, 2403, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.shift_jis_2004", NULL, 174, 2118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.undefined", NULL, 176, 1979, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.shift_jisx0213", NULL, 175, 2118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.unicode_escape", NULL, 177, 1902, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.tis_620", NULL, 176, 3437, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_16", NULL, 178, 4808, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.undefined", NULL, 177, 2787, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_16_be", NULL, 179, 1581, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.unicode_escape", NULL, 178, 2794, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_16_le", NULL, 180, 1581, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_16", NULL, 179, 8008, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_32", NULL, 181, 4701, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_16_be", NULL, 180, 2300, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_32_be", NULL, 182, 1474, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_16_le", NULL, 181, 2300, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_32_le", NULL, 183, 1474, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_32", NULL, 182, 7903, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_7", NULL, 184, 1502, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_32_be", NULL, 183, 2193, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_8", NULL, 185, 1561, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_32_le", NULL, 184, 2193, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.utf_8_sig", NULL, 186, 4358, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_7", NULL, 185, 2221, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.uu_codec", NULL, 187, 3150, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_8", NULL, 186, 2280, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"encodings.zlib_codec", NULL, 188, 2811, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.utf_8_sig", NULL, 187, 7274, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"enum", NULL, 189, 26027, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.uu_codec", NULL, 188, 5231, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"filecmp", NULL, 190, 8713, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"encodings.zlib_codec", NULL, 189, 4706, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"fileinput", NULL, 191, 14036, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"enum", NULL, 190, 87011, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"fnmatch", NULL, 192, 4208, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"filecmp", NULL, 191, 15672, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"fractions", NULL, 193, 18564, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"fileinput", NULL, 192, 21130, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ftplib", NULL, 194, 28941, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"fnmatch", NULL, 193, 7433, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"functools", NULL, 195, 28299, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"fractions", NULL, 194, 29195, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"genericpath", NULL, 196, 3871, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ftplib", NULL, 195, 47130, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"getopt", NULL, 197, 6303, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"functools", NULL, 196, 46597, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"getpass", NULL, 198, 4174, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"genericpath", NULL, 197, 6123, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"gettext", NULL, 199, 18185, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"getopt", NULL, 198, 9694, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"glob", NULL, 200, 5816, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"getpass", NULL, 199, 7475, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"graphlib", NULL, 201, 7580, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"gettext", NULL, 200, 23750, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"gzip", NULL, 202, 18510, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"glob", NULL, 201, 11106, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"hashlib", NULL, 203, 6809, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"graphlib", NULL, 202, 11030, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"heapq", NULL, 204, 13829, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"gzip", NULL, 203, 33681, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"html", NULL, 205, 3278, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"hashlib", NULL, 204, 12300, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"html.entities", NULL, 206, 144394, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"heapq", NULL, 205, 20538, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"html.parser", NULL, 207, 10728, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"html", NULL, 206, 4762, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"http", NULL, 208, 6371, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"html.entities", NULL, 207, 99407, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"http.client", NULL, 209, 35142, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"html.parser", NULL, 208, 19340, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"http.cookiejar", NULL, 210, 53404, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"http", NULL, 209, 8686, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"http.server", NULL, 211, 35156, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"http.client", NULL, 210, 60180, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"imaplib", NULL, 212, 42276, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"http.cookiejar", NULL, 211, 88105, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"imghdr", NULL, 213, 3869, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"http.server", NULL, 212, 60103, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"imp", NULL, 214, 9750, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"imaplib", NULL, 213, 68558, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib", NULL, 215, 3760, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"imghdr", NULL, 214, 7803, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib._abc", NULL, 216, 1935, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"imp", NULL, 215, 16422, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib._adapters", NULL, 217, 3667, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib", NULL, 216, 6615, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"importlib._bootstrap", NULL, 218, 30092, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib._abc", NULL, 217, 2307, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib._bootstrap_external", NULL, 219, 44277, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib._bootstrap", NULL, 218, 57765, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib._common", NULL, 220, 2931, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib._bootstrap_external", NULL, 219, 72160, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.abc", NULL, 221, 15855, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.abc", NULL, 220, 14455, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.machinery", NULL, 222, 908, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.machinery", NULL, 221, 1264, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata", NULL, 223, 37051, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata", NULL, 222, 58884, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"importlib.metadata._adapters", NULL, 224, 2308, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._adapters", NULL, 223, 3756, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata._collections", NULL, 225, 1483, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._collections", NULL, 224, 2103, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata._functools", NULL, 226, 3073, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._functools", NULL, 225, 3543, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata._itertools", NULL, 227, 535, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._itertools", NULL, 226, 2506, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata._meta", NULL, 228, 2228, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._meta", NULL, 227, 2874, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.metadata._text", NULL, 229, 3024, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.metadata._text", NULL, 228, 4301, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.readers", NULL, 230, 5146, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.readers", NULL, 229, 493, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"importlib.resources", NULL, 231, 5333, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources", NULL, 230, 729, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"importlib.util", NULL, 232, 9293, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources._adapters", NULL, 231, 10655, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"inspect", NULL, 233, 85117, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources._common", NULL, 232, 4201, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"io", NULL, 234, 3627, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources._itertools", NULL, 233, 1300, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ipaddress", NULL, 235, 61415, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources._legacy", NULL, 234, 6398, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"json", NULL, 236, 12219, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources.abc", NULL, 235, 8462, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"json.decoder", NULL, 237, 9730, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources.readers", NULL, 236, 8261, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"json.encoder", NULL, 238, 11081, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.resources.simple", NULL, 237, 6825, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"json.scanner", NULL, 239, 1880, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.simple", NULL, 238, 504, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"keyword", NULL, 240, 891, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"importlib.util", NULL, 239, 14411, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"linecache", NULL, 241, 4106, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"inspect", NULL, 240, 141877, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"locale", NULL, 242, 46118, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"io", NULL, 241, 4985, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"logging", NULL, 243, 66846, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ipaddress", NULL, 242, 93994, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"lzma", NULL, 244, 12064, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"json", NULL, 243, 14175, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"mailcap", NULL, 245, 7284, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"json.decoder", NULL, 244, 15151, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"mimetypes", NULL, 246, 17583, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"json.encoder", NULL, 245, 16773, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"modulefinder", NULL, 247, 16130, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"json.scanner", NULL, 246, 3611, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"netrc", NULL, 248, 3897, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"keyword", NULL, 247, 1032, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ntpath", NULL, 249, 15267, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"linecache", NULL, 248, 7433, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"nturl2path", NULL, 250, 1711, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"locale", NULL, 249, 64255, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"numbers", NULL, 251, 11830, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"logging", NULL, 250, 98829, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"opcode", NULL, 252, 5411, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"lzma", NULL, 251, 16681, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"operator", NULL, 253, 13472, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"mailcap", NULL, 252, 12747, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"optparse", NULL, 254, 47718, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"mimetypes", NULL, 253, 25816, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"os", NULL, 255, 31563, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"modulefinder", NULL, 254, 30982, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pathlib", NULL, 256, 42016, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"netrc", NULL, 255, 9852, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pickle", NULL, 257, 46846, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ntpath", NULL, 256, 30552, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pickletools", NULL, 258, 67724, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"nturl2path", NULL, 257, 3452, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pipes", NULL, 259, 7733, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"numbers", NULL, 258, 15214, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pkgutil", NULL, 260, 18325, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"opcode", NULL, 259, 13816, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"platform", NULL, 261, 27204, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"operator", NULL, 260, 18723, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"poplib", NULL, 262, 13537, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"os", NULL, 261, 48929, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"posixpath", NULL, 263, 10494, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pathlib", NULL, 262, 67684, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pprint", NULL, 264, 17839, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pickle", NULL, 263, 86597, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pstats", NULL, 265, 23585, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pickletools", NULL, 264, 86237, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"py_compile", NULL, 266, 7303, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pipes", NULL, 265, 11930, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pyclbr", NULL, 267, 9739, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pkgutil", NULL, 266, 31542, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"pydoc", NULL, 268, 85038, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"platform", NULL, 267, 43194, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"queue", NULL, 269, 10756, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"poplib", NULL, 268, 20932, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"quopri", NULL, 270, 5758, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"posixpath", NULL, 269, 19947, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"random", NULL, 271, 22712, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pprint", NULL, 270, 33434, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"re", NULL, 272, 14191, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pstats", NULL, 271, 41831, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"reprlib", NULL, 273, 5214, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"py_compile", NULL, 272, 10738, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"rlcompleter", NULL, 274, 5918, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pyclbr", NULL, 273, 15842, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"sched", NULL, 275, 6079, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"pydoc", NULL, 274, 152896, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"selectors", NULL, 276, 17069, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"queue", NULL, 275, 16417, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"shlex", NULL, 277, 7746, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"quopri", NULL, 276, 10821, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"shutil", NULL, 278, 38500, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"random", NULL, 277, 34488, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"signal", NULL, 279, 2899, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"re", NULL, 278, 19269, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"sndhdr", NULL, 280, 6926, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"re._casefix", NULL, 279, 1810, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"socket", NULL, 281, 28927, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"re._compiler", NULL, 280, 31784, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"socketserver", NULL, 282, 25311, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"re._constants", NULL, 281, 5914, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"sre_compile", NULL, 283, 15158, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"re._parser", NULL, 282, 50001, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"sre_constants", NULL, 284, 6321, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"reprlib", NULL, 283, 9642, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"sre_parse", NULL, 285, 21719, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"rlcompleter", NULL, 284, 8974, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"ssl", NULL, 286, 45235, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sched", NULL, 285, 8366, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"stat", NULL, 287, 4237, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"selectors", NULL, 286, 28503, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"statistics", NULL, 288, 37015, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"shlex", NULL, 287, 14667, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"string", NULL, 289, 7066, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"shutil", NULL, 288, 70908, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"stringprep", NULL, 290, 17039, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"signal", NULL, 289, 4981, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"struct", NULL, 291, 271, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sndhdr", NULL, 290, 12390, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"subprocess", NULL, 292, 44705, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"socket", NULL, 291, 45441, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"symtable", NULL, 293, 12799, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"socketserver", NULL, 292, 37020, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"sysconfig", NULL, 294, 18115, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sre_compile", NULL, 293, 777, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tarfile", NULL, 295, 70259, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sre_constants", NULL, 294, 780, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tempfile", NULL, 296, 27090, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sre_parse", NULL, 295, 773, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"textwrap", NULL, 297, 13776, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"ssl", NULL, 296, 73435, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"threading", NULL, 298, 44933, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"stat", NULL, 297, 5502, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"timeit", NULL, 299, 11733, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"statistics", NULL, 298, 58367, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter", NULL, 300, 169554, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"string", NULL, 299, 12602, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.colorchooser", NULL, 301, 2264, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"stringprep", NULL, 300, 26491, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.commondialog", NULL, 302, 1312, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"struct", NULL, 301, 344, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.constants", NULL, 303, 1621, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"subprocess", NULL, 302, 84660, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.dialog", NULL, 304, 1472, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"symtable", NULL, 303, 19471, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.filedialog", NULL, 305, 12417, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"sysconfig", NULL, 304, 31648, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.font", NULL, 306, 6579, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tarfile", NULL, 305, 130169, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.messagebox", NULL, 307, 2890, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tempfile", NULL, 306, 40614, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.simpledialog", NULL, 308, 10895, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"textwrap", NULL, 307, 19559, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tkinter.ttk", NULL, 309, 55641, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"threading", NULL, 308, 70042, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"token", NULL, 310, 2702, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"timeit", NULL, 309, 16416, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tokenize", NULL, 311, 17158, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter", NULL, 310, 258117, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"trace", NULL, 312, 19834, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.colorchooser", NULL, 311, 2990, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"traceback", NULL, 313, 21676, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.commondialog", NULL, 312, 2084, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tracemalloc", NULL, 314, 17489, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.constants", NULL, 313, 1902, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"tty", NULL, 315, 1043, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.dialog", NULL, 314, 2323, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"types", NULL, 316, 9489, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.filedialog", NULL, 315, 24683, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"typing", NULL, 317, 85241, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.font", NULL, 316, 11763, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"urllib", NULL, 318, 86, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.messagebox", NULL, 317, 4700, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"urllib.error", NULL, 319, 2817, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.simpledialog", NULL, 318, 19407, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"urllib.parse", NULL, 320, 34060, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tkinter.ttk", NULL, 319, 78771, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"urllib.request", NULL, 321, 71302, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"token", NULL, 320, 3687, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"urllib.response", NULL, 322, 3431, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tokenize", NULL, 321, 30322, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"uu", NULL, 323, 3831, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tomllib", NULL, 322, 290, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
+    {"uuid", NULL, 324, 22462, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tomllib._parser", NULL, 323, 30765, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"warnings", NULL, 325, 13610, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tomllib._re", NULL, 324, 4407, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"weakref", NULL, 326, 20307, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"tomllib._types", NULL, 325, 320, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"webbrowser", NULL, 327, 16964, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"trace", NULL, 326, 35996, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"xdrlib", NULL, 328, 7844, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
 },
-    {"traceback", NULL, 327, 47164, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"tracemalloc", NULL, 328, 29048, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"tty", NULL, 329, 1989, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"types", NULL, 330, 14783, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"typing", NULL, 331, 159641, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"urllib", NULL, 332, 102, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG | NUITKA_PACKAGE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"urllib.error", NULL, 333, 3846, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"urllib.parse", NULL, 334, 54578, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"urllib.request", NULL, 335, 126686, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"urllib.response", NULL, 336, 5154, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"uu", NULL, 337, 8759, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"uuid", NULL, 338, 33032, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"warnings", NULL, 339, 24996, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"weakref", NULL, 340, 34921, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"webbrowser", NULL, 341, 32708, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"xdrlib", NULL, 342, 13106, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
-#if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
-, NULL
-#endif
-},
-    {"zipfile", NULL, 343, 117949, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
+    {"zipfile", NULL, 329, 60999, NUITKA_TRANSLATED_FLAG | NUITKA_BYTECODE_FLAG
 #if defined(_NUITKA_FREEZER_HAS_FILE_PATH)
 , NULL
 #endif
@@ -2032,158 +2277,157 @@ struct frozen_desc {
 };
 
 static struct frozen_desc _frozen_modules[] = {
-    {"_collections_abc", 6, 51177},
-    {"abc", 19, 9002},
-    {"ast", 21, 109625},
-    {"codecs", 31, 45206},
-    {"collections", 33, -78170},
-    {"collections.abc", 34, 258},
-    {"contextlib", 37, 32575},
-    {"copyreg", 40, 8142},
-    {"dis", 49, 36688},
-    {"encodings", 70, -6412},
-    {"encodings.aliases", 71, 12611},
-    {"encodings.ascii", 72, 2672},
-    {"encodings.big5", 74, 2097},
-    {"encodings.big5hkscs", 75, 2107},
-    {"encodings.charmap", 77, 4083},
-    {"encodings.cp037", 78, 3348},
-    {"encodings.cp1006", 79, 3424},
-    {"encodings.cp1026", 80, 3352},
-    {"encodings.cp1125", 81, 14216},
-    {"encodings.cp1140", 82, 3338},
-    {"encodings.cp1250", 83, 3375},
-    {"encodings.cp1251", 84, 3372},
-    {"encodings.cp1252", 85, 3375},
-    {"encodings.cp1253", 86, 3388},
-    {"encodings.cp1254", 87, 3377},
-    {"encodings.cp1255", 88, 3396},
-    {"encodings.cp1256", 89, 3374},
-    {"encodings.cp1257", 90, 3382},
-    {"encodings.cp1258", 91, 3380},
-    {"encodings.cp273", 92, 3334},
-    {"encodings.cp424", 93, 3378},
-    {"encodings.cp437", 94, 13849},
-    {"encodings.cp500", 95, 3348},
-    {"encodings.cp720", 96, 3445},
-    {"encodings.cp737", 97, 14251},
-    {"encodings.cp775", 98, 13889},
-    {"encodings.cp850", 99, 13430},
-    {"encodings.cp852", 100, 13905},
-    {"encodings.cp855", 101, 14218},
-    {"encodings.cp856", 102, 3410},
-    {"encodings.cp857", 103, 13225},
-    {"encodings.cp858", 104, 13400},
-    {"encodings.cp860", 105, 13820},
-    {"encodings.cp861", 106, 13845},
-    {"encodings.cp862", 107, 14078},
-    {"encodings.cp863", 108, 13841},
-    {"encodings.cp864", 109, 13880},
-    {"encodings.cp865", 110, 13845},
-    {"encodings.cp866", 111, 14258},
-    {"encodings.cp869", 112, 13782},
-    {"encodings.cp874", 113, 3476},
-    {"encodings.cp875", 114, 3345},
-    {"encodings.cp932", 115, 2099},
-    {"encodings.cp949", 116, 2099},
-    {"encodings.cp950", 117, 2099},
-    {"encodings.euc_jis_2004", 118, 2113},
-    {"encodings.euc_jisx0213", 119, 2113},
-    {"encodings.euc_jp", 120, 2101},
-    {"encodings.euc_kr", 121, 2101},
-    {"encodings.gb18030", 122, 2103},
-    {"encodings.gb2312", 123, 2101},
-    {"encodings.gbk", 124, 2095},
-    {"encodings.hp_roman8", 126, 3549},
-    {"encodings.hz", 127, 2093},
-    {"encodings.iso2022_jp", 129, 2114},
-    {"encodings.iso2022_jp_1", 130, 2118},
-    {"encodings.iso2022_jp_2", 131, 2118},
-    {"encodings.iso2022_jp_2004", 132, 2125},
-    {"encodings.iso2022_jp_3", 133, 2118},
-    {"encodings.iso2022_jp_ext", 134, 2123},
-    {"encodings.iso2022_kr", 135, 2114},
-    {"encodings.iso8859_1", 136, 3347},
-    {"encodings.iso8859_10", 137, 3352},
-    {"encodings.iso8859_11", 138, 3446},
-    {"encodings.iso8859_13", 139, 3355},
-    {"encodings.iso8859_14", 140, 3373},
-    {"encodings.iso8859_15", 141, 3352},
-    {"encodings.iso8859_16", 142, 3354},
-    {"encodings.iso8859_2", 143, 3347},
-    {"encodings.iso8859_3", 144, 3354},
-    {"encodings.iso8859_4", 145, 3347},
-    {"encodings.iso8859_5", 146, 3348},
-    {"encodings.iso8859_6", 147, 3392},
-    {"encodings.iso8859_7", 148, 3355},
-    {"encodings.iso8859_8", 149, 3386},
-    {"encodings.iso8859_9", 150, 3347},
-    {"encodings.johab", 151, 2099},
-    {"encodings.koi8_r", 152, 3399},
-    {"encodings.koi8_t", 153, 3310},
-    {"encodings.koi8_u", 154, 3385},
-    {"encodings.kz1048", 155, 3362},
-    {"encodings.latin_1", 156, 2684},
-    {"encodings.mac_arabic", 157, 13735},
-    {"encodings.mac_croatian", 158, 3394},
-    {"encodings.mac_cyrillic", 159, 3384},
-    {"encodings.mac_farsi", 160, 3328},
-    {"encodings.mac_greek", 161, 3368},
-    {"encodings.mac_iceland", 162, 3387},
-    {"encodings.mac_latin2", 163, 3528},
-    {"encodings.mac_roman", 164, 3385},
-    {"encodings.mac_romanian", 165, 3395},
-    {"encodings.mac_turkish", 166, 3388},
-    {"encodings.palmos", 167, 3375},
-    {"encodings.ptcp154", 168, 3469},
-    {"encodings.punycode", 169, 10724},
-    {"encodings.quopri_codec", 170, 3576},
-    {"encodings.raw_unicode_escape", 171, 2814},
-    {"encodings.shift_jis", 173, 2107},
-    {"encodings.shift_jis_2004", 174, 2118},
-    {"encodings.shift_jisx0213", 175, 2118},
-    {"encodings.tis_620", 176, 3437},
-    {"encodings.undefined", 177, 2787},
-    {"encodings.unicode_escape", 178, 2794},
-    {"encodings.utf_16", 179, 8008},
-    {"encodings.utf_16_be", 180, 2300},
-    {"encodings.utf_16_le", 181, 2300},
-    {"encodings.utf_32", 182, 7903},
-    {"encodings.utf_32_be", 183, 2193},
-    {"encodings.utf_32_le", 184, 2193},
-    {"encodings.utf_7", 185, 2221},
-    {"encodings.utf_8", 186, 2280},
-    {"encodings.utf_8_sig", 187, 7274},
-    {"encodings.uu_codec", 188, 5231},
-    {"encodings.zlib_codec", 189, 4706},
-    {"enum", 190, 87011},
-    {"functools", 196, 46597},
-    {"genericpath", 197, 6123},
-    {"importlib", 216, -6615},
-    {"importlib._bootstrap", 218, 57765},
-    {"importlib._bootstrap_external", 219, 72160},
-    {"importlib.machinery", 221, 1264},
-    {"inspect", 240, 141877},
-    {"io", 241, 4985},
-    {"keyword", 247, 1032},
-    {"linecache", 248, 7433},
-    {"locale", 249, 64255},
-    {"opcode", 259, 13816},
-    {"operator", 260, 18723},
-    {"os", 261, 48929},
-    {"posixpath", 269, 19947},
-    {"quopri", 276, 10821},
-    {"re", 278, -19269},
-    {"re._casefix", 279, 1810},
-    {"re._compiler", 280, 31784},
-    {"re._constants", 281, 5914},
-    {"re._parser", 282, 50001},
-    {"reprlib", 283, 9642},
-    {"stat", 297, 5502},
-    {"token", 320, 3687},
-    {"tokenize", 321, 30322},
-    {"types", 330, 14783},
-    {"warnings", 339, 24996},
+    {"_collections_abc", 3, 32889},
+    {"abc", 17, 6715},
+    {"ast", 19, 55703},
+    {"codecs", 30, 33183},
+    {"collections", 32, -48408},
+    {"collections.abc", 33, 202},
+    {"contextlib", 36, 20859},
+    {"copyreg", 39, 4647},
+    {"dis", 48, 15620},
+    {"encodings", 69, -3830},
+    {"encodings.aliases", 70, 10885},
+    {"encodings.ascii", 71, 1776},
+    {"encodings.big5", 73, 1330},
+    {"encodings.big5hkscs", 74, 1340},
+    {"encodings.charmap", 76, 2683},
+    {"encodings.cp037", 77, 2314},
+    {"encodings.cp1006", 78, 2390},
+    {"encodings.cp1026", 79, 2318},
+    {"encodings.cp1125", 80, 9255},
+    {"encodings.cp1140", 81, 2304},
+    {"encodings.cp1250", 82, 2341},
+    {"encodings.cp1251", 83, 2338},
+    {"encodings.cp1252", 84, 2341},
+    {"encodings.cp1253", 85, 2354},
+    {"encodings.cp1254", 86, 2343},
+    {"encodings.cp1255", 87, 2362},
+    {"encodings.cp1256", 88, 2340},
+    {"encodings.cp1257", 89, 2348},
+    {"encodings.cp1258", 90, 2346},
+    {"encodings.cp273", 91, 2300},
+    {"encodings.cp424", 92, 2344},
+    {"encodings.cp437", 93, 8888},
+    {"encodings.cp500", 94, 2314},
+    {"encodings.cp720", 95, 2411},
+    {"encodings.cp737", 96, 9290},
+    {"encodings.cp775", 97, 8928},
+    {"encodings.cp850", 98, 8469},
+    {"encodings.cp852", 99, 8944},
+    {"encodings.cp855", 100, 9257},
+    {"encodings.cp856", 101, 2376},
+    {"encodings.cp857", 102, 8368},
+    {"encodings.cp858", 103, 8439},
+    {"encodings.cp860", 104, 8859},
+    {"encodings.cp861", 105, 8884},
+    {"encodings.cp862", 106, 9117},
+    {"encodings.cp863", 107, 8880},
+    {"encodings.cp864", 108, 9027},
+    {"encodings.cp865", 109, 8884},
+    {"encodings.cp866", 110, 9297},
+    {"encodings.cp869", 111, 8932},
+    {"encodings.cp874", 112, 2442},
+    {"encodings.cp875", 113, 2311},
+    {"encodings.cp932", 114, 1332},
+    {"encodings.cp949", 115, 1332},
+    {"encodings.cp950", 116, 1332},
+    {"encodings.euc_jis_2004", 117, 1346},
+    {"encodings.euc_jisx0213", 118, 1346},
+    {"encodings.euc_jp", 119, 1334},
+    {"encodings.euc_kr", 120, 1334},
+    {"encodings.gb18030", 121, 1336},
+    {"encodings.gb2312", 122, 1334},
+    {"encodings.gbk", 123, 1328},
+    {"encodings.hp_roman8", 125, 2515},
+    {"encodings.hz", 126, 1326},
+    {"encodings.iso2022_jp", 128, 1347},
+    {"encodings.iso2022_jp_1", 129, 1351},
+    {"encodings.iso2022_jp_2", 130, 1351},
+    {"encodings.iso2022_jp_2004", 131, 1357},
+    {"encodings.iso2022_jp_3", 132, 1351},
+    {"encodings.iso2022_jp_ext", 133, 1355},
+    {"encodings.iso2022_kr", 134, 1347},
+    {"encodings.iso8859_1", 135, 2313},
+    {"encodings.iso8859_10", 136, 2318},
+    {"encodings.iso8859_11", 137, 2412},
+    {"encodings.iso8859_13", 138, 2321},
+    {"encodings.iso8859_14", 139, 2339},
+    {"encodings.iso8859_15", 140, 2318},
+    {"encodings.iso8859_16", 141, 2320},
+    {"encodings.iso8859_2", 142, 2313},
+    {"encodings.iso8859_3", 143, 2320},
+    {"encodings.iso8859_4", 144, 2313},
+    {"encodings.iso8859_5", 145, 2314},
+    {"encodings.iso8859_6", 146, 2358},
+    {"encodings.iso8859_7", 147, 2321},
+    {"encodings.iso8859_8", 148, 2352},
+    {"encodings.iso8859_9", 149, 2313},
+    {"encodings.johab", 150, 1332},
+    {"encodings.koi8_r", 151, 2365},
+    {"encodings.koi8_t", 152, 2276},
+    {"encodings.koi8_u", 153, 2351},
+    {"encodings.kz1048", 154, 2328},
+    {"encodings.latin_1", 155, 1788},
+    {"encodings.mac_arabic", 156, 8774},
+    {"encodings.mac_croatian", 157, 2360},
+    {"encodings.mac_cyrillic", 158, 2350},
+    {"encodings.mac_farsi", 159, 2294},
+    {"encodings.mac_greek", 160, 2334},
+    {"encodings.mac_iceland", 161, 2353},
+    {"encodings.mac_latin2", 162, 2494},
+    {"encodings.mac_roman", 163, 2351},
+    {"encodings.mac_romanian", 164, 2361},
+    {"encodings.mac_turkish", 165, 2354},
+    {"encodings.palmos", 166, 2341},
+    {"encodings.ptcp154", 167, 2435},
+    {"encodings.punycode", 168, 6269},
+    {"encodings.quopri_codec", 169, 2281},
+    {"encodings.raw_unicode_escape", 170, 1922},
+    {"encodings.shift_jis", 172, 1340},
+    {"encodings.shift_jis_2004", 173, 1350},
+    {"encodings.shift_jisx0213", 174, 1350},
+    {"encodings.tis_620", 175, 2403},
+    {"encodings.undefined", 176, 1979},
+    {"encodings.unicode_escape", 177, 1902},
+    {"encodings.utf_16", 178, 4808},
+    {"encodings.utf_16_be", 179, 1581},
+    {"encodings.utf_16_le", 180, 1581},
+    {"encodings.utf_32", 181, 4701},
+    {"encodings.utf_32_be", 182, 1474},
+    {"encodings.utf_32_le", 183, 1474},
+    {"encodings.utf_7", 184, 1502},
+    {"encodings.utf_8", 185, 1561},
+    {"encodings.utf_8_sig", 186, 4358},
+    {"encodings.uu_codec", 187, 3150},
+    {"encodings.zlib_codec", 188, 2811},
+    {"enum", 189, 26027},
+    {"functools", 195, 28299},
+    {"genericpath", 196, 3871},
+    {"importlib", 215, -3760},
+    {"importlib._bootstrap", 218, 30092},
+    {"importlib._bootstrap_external", 219, 44277},
+    {"importlib.machinery", 222, 908},
+    {"inspect", 233, 85117},
+    {"io", 234, 3627},
+    {"keyword", 240, 891},
+    {"linecache", 241, 4106},
+    {"locale", 242, 46118},
+    {"opcode", 252, 5411},
+    {"operator", 253, 13472},
+    {"os", 255, 31563},
+    {"posixpath", 263, 10494},
+    {"quopri", 270, 5758},
+    {"re", 272, 14191},
+    {"reprlib", 273, 5214},
+    {"sre_compile", 283, 15158},
+    {"sre_constants", 284, 6321},
+    {"sre_parse", 285, 21719},
+    {"stat", 287, 4237},
+    {"token", 310, 2702},
+    {"tokenize", 311, 17158},
+    {"types", 316, 9489},
+    {"warnings", 325, 13610},
     {NULL, 0, 0}
 };
 

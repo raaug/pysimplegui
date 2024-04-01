@@ -1,1 +1,1 @@
-/home/ray47/Projects/python/pysimplegui/.venv/lib/python3.11/site-packages/nuitka/build/static_src/CompiledFunctionType.c
+/home/ray47/.local/lib/python3.10/site-packages/nuitka/build/static_src/CompiledFunctionType.c
